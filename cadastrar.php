@@ -3,7 +3,7 @@
 include 'banco.php';
 
 if (isset($_POST['salvar'])) {
-    excluirPessoa($_POST['nomePessoa']);
+    cadastrarPessoa($_POST['nomePessoa']);
     echo '<p>cadastro realizado com sucesso</p>';
     echo '<a href="sistema.php">Voltar</a>';
 }

@@ -1,7 +1,6 @@
 <?php
-session_start();
 
-include 'backend/banco.php';
+include 'banco.php';
 
 if (isset($_POST['entrar'])) {
     if (consultaUsuario($_POST['login'], $_POST['senha'])) {
